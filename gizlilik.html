@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YDS Master — Gizlilik Politikası</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 760px; margin: 0 auto; padding: 32px 20px 64px;
+    background: Canvas; color: CanvasText;
+  }
+  h1 { font-size: 1.7rem; margin-bottom: .2em; }
+  h2 { font-size: 1.15rem; margin-top: 2em; }
+  .tarih { color: GrayText; font-size: .9rem; margin-top: 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  th, td { border: 1px solid color-mix(in srgb, CanvasText 25%, transparent);
+           padding: 8px 10px; text-align: left; vertical-align: top; font-size: .95rem; }
+  th { background: color-mix(in srgb, CanvasText 8%, transparent); }
+  footer { margin-top: 3em; font-size: .9rem; color: GrayText; }
+  a { color: #0089a8; }
+  @media (prefers-color-scheme: dark) { a { color: #4dd0e1; } }
+</style>
+</head>
+<body>
+
+<h1>YDS Master — Gizlilik Politikası</h1>
+<p class="tarih">Son güncelleme: 2 Ağustos 2026</p>
+
+<p>
+  YDS Master, yapı denetim firmalarının saha çalışanlarının kullandığı bir iş uygulamasıdır.
+  Uygulama, firmanın YİBF (Yapı İnşaat Bilgi Formu) kayıtlarını görüntülemek, aylık denetim
+  fotoğrafı yüklemek ve firmanın muhasebe kayıtlarını işlemek için kullanılır.
+</p>
+<p>
+  Veri sorumlusu:<br>
+  AFKAR YAPI VE İNŞAAT MÜHENDİSLİK MİMARLIK GIDA MADDELERİ ARAÇ KİRALAMA
+  SANAYİ TİCARET LTD. ŞTİ.<br>
+  Burmalı Mah. Enstitü Cad. No: 17 İç Kapı No: 1, Merkez / Afyonkarahisar<br>
+  İletişim: <a href="mailto:destek@afkar.com.tr">destek@afkar.com.tr</a>
+</p>
+
+<h2>1. Hangi verileri işliyoruz?</h2>
+<table>
+  <tr><th>Veri</th><th>Neden</th></tr>
+  <tr>
+    <td>E-posta adresi</td>
+    <td>Uygulamaya giriş (kimlik doğrulama) ve hesabın firmanızla eşleştirilmesi.</td>
+  </tr>
+  <tr>
+    <td>Kullanıcı kimliği (hesap numarası)</td>
+    <td>Yüklenen kaydın hangi denetçiye ait olduğunun tutulması.</td>
+  </tr>
+  <tr>
+    <td>Denetim fotoğrafları</td>
+    <td>Aylık denetim sürecinde çekilen yapı fotoğraflarının kaydedilmesi ve — siz
+        onayladığınızda — Çevre, Şehircilik ve İklim Değişikliği Bakanlığı sistemine
+        iletilmesi.</td>
+  </tr>
+  <tr>
+    <td>Denetim ve muhasebe kayıtları</td>
+    <td>İnşaat seviyesi, açıklama, gelir-gider hareketleri gibi firmanın iş verileri.</td>
+  </tr>
+</table>
+
+<h2>2. Toplamadığımız veriler</h2>
+<ul>
+  <li><strong>Konum:</strong> Uygulama cihazınızın konumunu okumaz ve konum izni istemez.
+      Yüklenen fotoğraflar, gönderilmeden önce yeniden kodlandığı için EXIF/GPS bilgisi taşımaz.
+      Uygulamada görünen yapı koordinatları resmî kayıtlardan gelir, telefonunuzdan değil.</li>
+  <li><strong>Reklam ve izleme:</strong> Uygulamada reklam, reklam kimliği, çapraz site/uygulama
+      izleme ya da üçüncü taraf analitik yoktur.</li>
+  <li><strong>Rehber, takvim, sağlık, ödeme bilgisi:</strong> Erişilmez.</li>
+  <li><strong>Kullanım/teşhis verisi:</strong> Toplanmaz.</li>
+</ul>
+
+<h2>3. Cihaz izinleri</h2>
+<ul>
+  <li><strong>Kamera:</strong> Yalnız denetim fotoğrafı çekmek için, siz "fotoğraf çek"
+      dediğinizde kullanılır.</li>
+  <li><strong>Fotoğraf kitaplığı:</strong> Yalnız seçtiğiniz fotoğrafı yüklemek için kullanılır;
+      kitaplığınız taranmaz.</li>
+</ul>
+
+<h2>4. Verinin nerede tutulduğu ve kimlerle paylaşıldığı</h2>
+<p>
+  Veriler, hizmeti sağlayan sunucularda ve kimlik doğrulama sağlayıcısı Supabase altyapısında
+  tutulur. Veriler yalnızca şu durumlarda paylaşılır:
+</p>
+<ul>
+  <li>Kendi firmanızın yetkili kullanıcılarıyla (uygulamanın çalışma amacı budur);</li>
+  <li>Resmî denetim gönderimlerinde ilgili Bakanlık sistemleriyle;</li>
+  <li>Kanunen zorunlu hâllerde yetkili kamu kurumlarıyla.</li>
+</ul>
+<p>Veriler hiçbir şekilde satılmaz, reklam amacıyla kullanılmaz.</p>
+
+<h2>5. Saklama süresi</h2>
+<p>
+  Denetim kayıtları, yapı denetim mevzuatının öngördüğü süre boyunca firma tarafından saklanır.
+  Hesabınız kapatıldıktan sonra kişisel hesap bilgileriniz (e-posta, oturum kaydı) silinir;
+  firmanın yasal olarak saklamakla yükümlü olduğu denetim kayıtları mevzuat gereği korunur.
+</p>
+
+<h2>6. Haklarınız ve hesap silme</h2>
+<p>
+  Uygulama içinden <strong>Menü → Hesap → Hesabımı Sil</strong> yolunu izleyerek hesabınızın ve
+  kişisel verilerinizin silinmesini talep edebilirsiniz. Talebiniz firma yöneticinize iletilir
+  ve hesabınız kapatılır.
+</p>
+<p>
+  KVKK m.11 kapsamında verilerinize erişme, düzeltme, silme ve işlemeye itiraz etme haklarınız
+  vardır. Başvurularınızı
+  <a href="mailto:destek@afkar.com.tr">destek@afkar.com.tr</a>
+  adresine iletebilirsiniz; en geç 30 gün içinde yanıt verilir.
+</p>
+
+<h2>7. Çocuklar</h2>
+<p>
+  YDS Master bir iş uygulamasıdır; yalnızca yapı denetim firmalarının yetkilendirdiği
+  çalışanlar tarafından kullanılır ve çocuklara yönelik değildir.
+</p>
+
+<h2>8. Değişiklikler</h2>
+<p>
+  Bu politika güncellenirse yukarıdaki "Son güncelleme" tarihi değişir. Önemli değişikliklerde
+  kullanıcılar uygulama üzerinden bilgilendirilir.
+</p>
+
+<footer>
+  YDS Master · <a href="destek.html">Destek</a> ·
+  <a href="mailto:destek@afkar.com.tr">destek@afkar.com.tr</a>
+</footer>
+
+</body>
+</html>
