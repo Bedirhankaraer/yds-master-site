@@ -26,12 +26,13 @@
 <body>
 
 <h1>YDS Master — Gizlilik Politikası</h1>
-<p class="tarih">Son güncelleme: 2 Ağustos 2026</p>
+<p class="tarih">Son güncelleme: 24 Eylül 2026</p>
 
 <p>
   YDS Master, yapı denetim firmalarının saha çalışanlarının kullandığı bir iş uygulamasıdır.
   Uygulama, firmanın YİBF (Yapı İnşaat Bilgi Formu) kayıtlarını görüntülemek, aylık denetim
-  fotoğrafı yüklemek ve firmanın muhasebe kayıtlarını işlemek için kullanılır.
+  fotoğrafı yüklemek, hak ediş ve laboratuvar bilgilerini takip etmek ve yakındaki
+  inşaatları bulmak için kullanılır.
 </p>
 <p>
   Veri sorumlusu:<br>
@@ -59,14 +60,31 @@
         iletilmesi.</td>
   </tr>
   <tr>
-    <td>Denetim ve muhasebe kayıtları</td>
-    <td>İnşaat seviyesi, açıklama, gelir-gider hareketleri gibi firmanın iş verileri.</td>
+    <td>Denetim ve mali iş kayıtları</td>
+    <td>İnşaat seviyesi, açıklama, hak ediş ve tahsilat bilgileri gibi firmanın iş verileri.</td>
+  </tr>
+  <tr>
+    <td>Hak ediş dekontları</td>
+    <td>İşin hak edişine yatan tutarın dekontu: sizin paylaştığınız dekont belgesi
+        (PDF, JPEG veya PNG) ile birlikte girdiğiniz tutar ve tarih. Hak ediş öncesi
+        tahsilat kontrolü için. Dekont belgeleri fotoğraflardan farklı olarak yeniden
+        kodlanmaz; paylaştığınız dosya olduğu gibi iletilir ve kendi meta verisini
+        taşıyabilir.</td>
+  </tr>
+  <tr>
+    <td>Laboratuvar sonuçları ve rapor evrakları</td>
+    <td>Yapıdan alınan beton numunelerinin 7 ve 28 günlük laboratuvar sonuçları, karot
+        değerleri ve bunlara ait rapor belgeleri (PDF). Denetim sürecinin izlenmesi ve
+        karot değerinin sahadan girilebilmesi için.</td>
   </tr>
 </table>
 
-<h2>2. Toplamadığımız veriler</h2>
+<h2>2. Cihazda işlenen ve toplamadığımız veriler</h2>
 <ul>
-  <li><strong>Konum:</strong> Uygulama cihazınızın konumunu okumaz ve konum izni istemez.
+  <li><strong>Konum:</strong> “İnşaat Bul” özelliğini başlattığınızda, izninizle cihazınızın konumu alınır
+      ve seçtiğiniz mesafe içindeki yapıları bulmak için yalnız cihazınızda işlenir. Cihaz konumu
+      sunucuya gönderilmez, kalıcı olarak kaydedilmez ve arka planda izlenmez.
+      Konum izni vermeden uygulamanın diğer özelliklerini kullanabilirsiniz.
       Yüklenen fotoğraflar, gönderilmeden önce yeniden kodlandığı için EXIF/GPS bilgisi taşımaz.
       Uygulamada görünen yapı koordinatları resmî kayıtlardan gelir, telefonunuzdan değil.</li>
   <li><strong>Reklam ve izleme:</strong> Uygulamada reklam, reklam kimliği, çapraz site/uygulama
@@ -77,6 +95,11 @@
 
 <h2>3. Cihaz izinleri</h2>
 <ul>
+  <li><strong>Konum:</strong> “İnşaat Bul” düğmesine dokunduğunuzda, daha önce izin
+      vermediyseniz uygulamayı kullanırken konum erişimi istenir. Yakındaki yapıları
+      mesafeye göre bulmak için Tam Konum kullanılır. Arka planda konum izni istenmez.
+      İzni iOS Ayarlar’dan değiştirebilir veya kaldırabilirsiniz. İzin reddedilirse
+      yakınlık araması çalışmaz; inşaatları normal YİBF listesinden bulabilirsiniz.</li>
   <li><strong>Kamera:</strong> Yalnız denetim fotoğrafı çekmek için, siz "fotoğraf çek"
       dediğinizde kullanılır.</li>
   <li><strong>Fotoğraf kitaplığı:</strong> Yalnız seçtiğiniz fotoğrafı yüklemek için kullanılır;
@@ -85,8 +108,8 @@
 
 <h2>4. Verinin nerede tutulduğu ve kimlerle paylaşıldığı</h2>
 <p>
-  Veriler, hizmeti sağlayan sunucularda ve kimlik doğrulama sağlayıcısı Supabase altyapısında
-  tutulur. Veriler yalnızca şu durumlarda paylaşılır:
+  Yukarıda yalnız cihazda işlendiği belirtilen cihaz konumu dışında, iş kayıtları hizmeti
+  sağlayan sunucularda; kimlik doğrulama bilgileri Supabase altyapısında tutulur. Veriler yalnızca şu durumlarda paylaşılır:
 </p>
 <ul>
   <li>Kendi firmanızın yetkili kullanıcılarıyla (uygulamanın çalışma amacı budur);</li>
@@ -94,6 +117,13 @@
   <li>Kanunen zorunlu hâllerde yetkili kamu kurumlarıyla.</li>
 </ul>
 <p>Veriler hiçbir şekilde satılmaz, reklam amacıyla kullanılmaz.</p>
+<p>
+  <strong>Belge paylaşımı sizin denetimizdedir.</strong> Bir laboratuvar raporunu uygulamadaki
+  paylaş düğmesiyle gönderdiğinizde, o belge için geçici (1 saat geçerli) bir bağlantı
+  oluşturulur. Süresi dolana kadar bağlantıya sahip olan herkes belgeyi açabilir; bu yüzden
+  yalnızca görmesini istediğiniz kişilerle paylaşın. Uygulama kendiliğinden hiçbir belge
+  paylaşmaz.
+</p>
 
 <h2>5. Saklama süresi</h2>
 <p>
