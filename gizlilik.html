@@ -61,7 +61,7 @@
   </tr>
   <tr>
     <td>Denetim ve mali iş kayıtları</td>
-    <td>İnşaat seviyesi, açıklama, hak ediş ve tahsilat bilgileri gibi firmanın iş verileri.</td>
+    <td>İnşaat seviyesi, açıklama, hak ediş ve tahsilat bilgileri ile randevu konusu, tarih/saat, açıklama ve işlemi yapan kullanıcı bilgisi gibi firmanın iş verileri.</td>
   </tr>
   <tr>
     <td>Hak ediş dekontları</td>
@@ -100,6 +100,13 @@
       mesafeye göre bulmak için Tam Konum kullanılır. Arka planda konum izni istenmez.
       İzni iOS Ayarlar’dan değiştirebilir veya kaldırabilirsiniz. İzin reddedilirse
       yakınlık araması çalışmaz; inşaatları normal YİBF listesinden bulabilirsiniz.</li>
+  <li><strong>Anımsatıcılar:</strong> Yalnız “Anımsatıcılara Ekle” işlemini seçtiğinizde
+      erişim istenir. Seçtiğiniz randevunun konusu, YİBF numarası, yapı sahibi, açıklaması
+      ve tarih/saat bilgisi kişisel anımsatıcı listenize kopyalanır. iOS bu işlem için tam
+      erişim izni ister; uygulama diğer anımsatıcılarınızı taramaz veya sunucuya göndermez.
+      Aynı hesap ve cihazdan tekrar eklediğinizde daha önce oluşturduğu kopyayı günceller.
+      Randevu değişiklikleri ve iptalleri otomatik aktarılmaz. İzni iOS Ayarlar’dan
+      kaldırabilirsiniz.</li>
   <li><strong>Kamera:</strong> Yalnız denetim fotoğrafı çekmek için, siz "fotoğraf çek"
       dediğinizde kullanılır.</li>
   <li><strong>Fotoğraf kitaplığı:</strong> Yalnız seçtiğiniz fotoğrafı yüklemek için kullanılır;
@@ -108,7 +115,8 @@
 
 <h2>4. Verinin nerede tutulduğu ve kimlerle paylaşıldığı</h2>
 <p>
-  Yukarıda yalnız cihazda işlendiği belirtilen cihaz konumu dışında, iş kayıtları hizmeti
+  Cihaz konumu ve uygulamanın oluşturduğu kişisel anımsatıcıya ait yerel kayıt bağlantısı
+  sunucuya gönderilmez. İş kayıtları hizmeti
   sağlayan sunucularda; kimlik doğrulama bilgileri Supabase altyapısında tutulur. Veriler yalnızca şu durumlarda paylaşılır:
 </p>
 <ul>
@@ -116,6 +124,11 @@
   <li>Resmî denetim gönderimlerinde ilgili Bakanlık sistemleriyle;</li>
   <li>Kanunen zorunlu hâllerde yetkili kamu kurumlarıyla.</li>
 </ul>
+<p>
+  “Anımsatıcılara Ekle” ile oluşturulan kişisel kopya, seçili Anımsatıcılar hesabınızın
+  (örneğin iCloud) eşitleme ayarlarına göre Apple veya ilgili hesap sağlayıcısında tutulabilir.
+  Bu kopyayı Anımsatıcılar uygulamasından yönetebilir ve silebilirsiniz.
+</p>
 <p>Veriler hiçbir şekilde satılmaz, reklam amacıyla kullanılmaz.</p>
 <p>
   <strong>Belge paylaşımı sizin denetimizdedir.</strong> Bir laboratuvar raporunu uygulamadaki
